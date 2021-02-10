@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.test.dto.UserResponseDto;
 import org.test.model.User;
 import org.test.service.UserMapper;
+import org.test.service.UserMapperImpl;
 import org.test.service.UserService;
 
 @RestController
@@ -19,7 +20,7 @@ public class UserController {
     private final UserMapper mapper;
 
     @Autowired
-    UserController(UserService userService, UserMapper mapper) {
+    UserController(UserService userService, UserMapperImpl mapper) {
         this.userService = userService;
         this.mapper = mapper;
     }
