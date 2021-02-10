@@ -1,23 +1,36 @@
 package org.test.dto;
 
 public class UserResponseDto {
-    private String name;
+    private Long id;
+    private String firstName;
+    private String lastName;
     private String email;
 
     public UserResponseDto() {
     }
 
-    public UserResponseDto(String name, String email) {
-        this.name = name;
-        this.email = email;
+    public Long getId() {
+        return id;
     }
 
-    public String getName() {
-        return name;
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getEmail() {
